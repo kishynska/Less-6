@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+</head>
+<body>
+	<script>
+			function replacer(string, letter) {
+				let newString = string;
+
+				for (let i = 0; i < string.length; i++) {
+					for (let j = 0; j < letter.length; j++) {
+						newString = newString.replace(letter[j], '');
+					}
+				}
+				return newString;	
+			}	
+			console.log(replacer('Hello', ['o', 'l']));
+	</script>
+</body>
+</html>
